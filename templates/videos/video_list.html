@@ -1,0 +1,11 @@
+<!-- templates/videos/video_list.html -->
+<h2>Available Videos</h2>
+
+<ul>
+  {% for video in videos %}
+    <li>
+      <h3>{{ video.title }}</h3>
+      <a href="{{ video.hls_master_url }}">Watch Video (Adaptive Streaming)</a>
+    </li>
+  {% endfor %}
+</ul>
